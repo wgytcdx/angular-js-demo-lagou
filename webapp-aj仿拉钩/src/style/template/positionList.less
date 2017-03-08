@@ -1,0 +1,38 @@
+.position-list {
+  margin: 0;
+  padding: 0;
+  .item {
+    margin: 0;
+    padding: 7px 7px;
+    list-style: none;
+    .h(65);
+    border-bottom: 1px solid @listLineColor;
+    .logo {
+      .w(65);
+      .h(65);
+      margin-right: 13px;
+    }
+    .title {
+      margin: 0;
+    }
+    .text {
+      margin: 5px 0 0 0;
+      .fs(13);
+    }
+    .icon {
+      .w(30);
+      .h(28);
+      top:14px;
+      right:12px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      &.star {
+        background-image: url("../image/star.png");
+      }
+      &.star-active {
+        background-image: url("../image/star-active.png");
+      }
+    }
+  }
+}
+

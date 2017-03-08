@@ -1,0 +1,45 @@
+@import "../variable.less";
+@import "../property.less";
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: @bodyBgColor;
+  li {
+    flex: 1;
+    .fs(14);
+    color: @muteColor;
+    padding: 6.5px;
+    &.select {
+      background-color: @highlightBgColor;
+      color: @highlightColor;
+    }
+  }
+  .foot-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .icon-document {
+    .w(25);
+    .h(21);
+    background: url("../image/document.png") no-repeat;
+  }
+  .icon-search {
+    .w(25);
+    .h(21);
+    background: url("../image/search.png")no-repeat;
+  }
+  .icon-my {
+    .w(25);
+    .h(21);
+    background: url("../image/my.png") no-repeat;
+  }
+}

@@ -1,0 +1,37 @@
+.search-bar {
+  background-color: @headBgColor;
+  padding: 0 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  .h(40);
+  .lh(40);
+  img {
+    transform: scale(0.6);
+  }
+  input {
+    background-color: @bodyBgColor;
+    border-radius: 80px;
+    outline: none;
+    color: #999;
+    border:none;
+    .fs(12);
+    .pl(20);
+    .h(20);
+    .w(190);
+  }
+  button {
+    background-color: @headBgColor;
+    .fs(12);
+    &:first-child {
+      color: @defaultColor;
+    }
+    &:last-child {
+      color: @muteColor;
+    }
+  }
+}
+
+h3 {
+  display: none;
+}
